@@ -1,0 +1,45 @@
+{
+  "name": "numbers.js",
+  "version": "1.0.0",
+  "description": "A helper library to operate numbers",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchandurkar/Numbers.js.git"
+  },
+  "keywords": [
+    "number",
+    "helpers",
+    "min",
+    "max",
+    "median",
+    "matrix",
+    "transpose",
+    "arithmatic"
+  ],
+  "author": "Chaitanya Chandurkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cchandurkar/Numbers.js/issues"
+  },
+  "homepage": "https://github.com/cchandurkar/Numbers.js#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "jshint-stylish": "^2.2.0",
+    "mocha": "^2.5.3"
+  }
+}
