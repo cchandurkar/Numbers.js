@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         files: ['index.js', 'Gruntfile.js', './src/**/*.js'],
         tasks: ['build'],
         options: {
-          spawn: false,
+          spawn: true,
         },
       },
     },
