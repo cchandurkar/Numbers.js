@@ -4,7 +4,10 @@ A helper library to operate numbers
 # Install
 Numbers.js is available as npm package and can be installed as `$ npm install number.js` or browserified build can be used from http://cchandurkar.github.io/Numbers.js/numbers.min.js
 
-
+# Build or Test
+1. Clone https://github.com/cchandurkar/Numbers.js
+2. `cd Numbers.js && npm install`
+3. `npm run build` to create browserified build **OR** `npm run serve` to launch development server that watches file changes and rebuilds. 
 
 ## Number Operations
 ```javascript
