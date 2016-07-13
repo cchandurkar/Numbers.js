@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Numbers.js by cchandurkar</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Numbers.js</h1>
+        <p>A helper library to operate numbers and series.</p>
+
+        <p class="view"><a href="https://github.com/cchandurkar/Numbers.js">View the Project on GitHub <small>cchandurkar/Numbers.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/cchandurkar/Numbers.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cchandurkar/Numbers.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cchandurkar/Numbers.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="numbersjs" class="anchor" href="#numbersjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Numbers.js</h1>
+
+<p>A helper library to operate numbers</p>
+
+<h1>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h1>
+
+<p>Numbers.js is available as npm package and can be installed as <code>$ npm install number.js</code> or browserified build can be used from <a href="http://cchandurkar.github.io/Numbers.js/numbers.min.js">http://cchandurkar.github.io/Numbers.js/numbers.min.js</a></p>
+
+<h1>
+<a id="build-or-test" class="anchor" href="#build-or-test" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build or Test</h1>
+
+<ol>
+<li>Clone <a href="https://github.com/cchandurkar/Numbers.js">https://github.com/cchandurkar/Numbers.js</a>
+</li>
+<li><code>cd Numbers.js &amp;&amp; npm install</code></li>
+<li>
+<code>npm run build</code> to create browserified build <strong>OR</strong> <code>npm run serve</code> to launch development server that watches file changes and rebuilds. </li>
+</ol>
+
+<h2>
+<a id="number-operations" class="anchor" href="#number-operations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Number Operations</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// 1. Checks whether number is prime number</span>
+<span class="pl-smi">numbers</span>.<span class="pl-en">isPrime</span>(number) <span class="pl-k">=&gt;</span> [boolean]
+
+<span class="pl-c">// 2. Checks whether number is abundant number</span>
+<span class="pl-smi">numbers</span>.<span class="pl-en">isAbundant</span>(number) <span class="pl-k">=&gt;</span> [boolean]
+
+<span class="pl-c">// 3. Checks whether number is perfect number</span>
+<span class="pl-smi">numbers</span>.<span class="pl-en">isPerfect</span>(number) <span class="pl-k">=&gt;</span> [boolean]
+
+<span class="pl-c">// 4. Checks whether number is deficient number</span>
+<span class="pl-smi">numbers</span>.<span class="pl-en">isDeficient</span>(number) <span class="pl-k">=&gt;</span> [boolean]
+
+<span class="pl-c">// 5. Checks whether number is perfect square</span>
+<span class="pl-smi">numbers</span>.<span class="pl-en">isPerfectSquare</span>(number) <span class="pl-k">=&gt;</span> [boolean]
+
+<span class="pl-c">// 6. Get all divisors of a number</span>
+<span class="pl-smi">numbers</span>.<span class="pl-en">divisors</span>(number) <span class="pl-k">=&gt;</span> [array]</pre></div>
+
+<h2>
+<a id="series-operations" class="anchor" href="#series-operations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Series Operations</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// 1. Get a sum of all integers</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">sum</span>([numbers]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 2. Finds a median of the series</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">median</span>([numbers]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 3. Finds a range of the series</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">range</span>([numbers]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 4. Finds a mean of the series</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">mean</span>([numbers]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 5. Finds a mode of the series</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">mode</span>([numbers]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 6. Sorts an array in ascending or descending order</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-c1">sort</span>([numbers], descending[boolean]) <span class="pl-k">=&gt;</span> [array]
+
+<span class="pl-c">// 7. Finds nth number in arithmetic series</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">nthArithmetic</span>([numbers], n[number]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 8. Finds nth number in geometric series</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">nthGeometric</span>([numbers], n[number]) <span class="pl-k">=&gt;</span> [number]
+
+<span class="pl-c">// 9. Checks whether series is in arithmetic progression</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">isArithmetic</span>([numbers]) <span class="pl-k">=&gt;</span> [boolean]
+
+<span class="pl-c">// 10. Checks whether series is in geotetric progression</span>
+<span class="pl-smi">numbers</span>.<span class="pl-smi">series</span>.<span class="pl-en">isGeometric</span>([numbers]) <span class="pl-k">=&gt;</span> [boolean]</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cchandurkar">cchandurkar</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
