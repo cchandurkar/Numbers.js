@@ -1,8 +1,9 @@
 import {expect} from 'chai';
-import * as numbers from '../src';
+import {isPrime} from '../src';
 
 describe("#prime", () => {
-  it("should be greater than 0", () => {
-    expect(numbers.isPrime(7)).to.be.true;
+  it("7, 11, 13 are prime numbers", () => {
+    var primeSeries = [7, 11, 13].map( (n) => isPrime(n) ).reduce( (a, b) => a && b);
+    expect(primeSeries).to.be.true;
   });
 });
