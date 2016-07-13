@@ -12,8 +12,11 @@ module.exports = function(grunt) {
 
     browserify: {
       core: {
-        options: {
+        options:{
           transform:[["babelify", { "presets": ["es2015"] }]],
+          browserifyOptions: {
+            standalone: 'numbers'
+          }
         },
         src: 'src/index.js',
         dest: 'build/numbers.js',
